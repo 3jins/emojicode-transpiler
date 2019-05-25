@@ -1,0 +1,41 @@
+{
+  "name": "emojicode-transpiler",
+  "version": "1.0.0",
+  "description": "🅰️👉🍇 Coding with emojicode(https://github.com/emojicode/emojicode) would be easier.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --require @babel/register --require @babel/polyfill",
+    "build": "babel src -d build",
+    "start": "node build/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3jins/emojicode-transpiler.git"
+  },
+  "keywords": [
+    "emojicode",
+    "emoji",
+    "transpiler"
+  ],
+  "author": "Sejin Jeon <jinaidy93@gmail.com> (https://enhanced.kr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3jins/emojicode-transpiler/issues"
+  },
+  "homepage": "https://github.com/3jins/emojicode-transpiler#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "mocha": "^6.1.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  }
+}
