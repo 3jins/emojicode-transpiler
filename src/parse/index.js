@@ -1,25 +1,25 @@
 import traverse from './traverse';
 import makeTokenObject from './makeTokenObject';
-import estimateToken from './estimateToken';
+// import estimateToken from './estimateToken';
 
 export default (raw) => {
   const tokenStream = [];
-  let traverseIdx = 0;
-  let contentType = 'rest';
+  let traverseStartIdx = 0;
+  let lastBoundaryToken = '';
   const codeLength = raw.length;
 
-  while (traverseIdx < codeLength) {
+  while (traverseStartIdx < codeLength) {
     const {
       boundaryTokenLocation,
       boundaryToken,
-    } = traverse(contentType, raw.slice(traverseIdx, raw.length + 1));
+    } = traverse(lastBoundaryToken, raw.slice(traverseStartIdx, raw.length + 1));
     const tokenObject = makeTokenObject(
-      contentType,
-      raw.slice(traverseIdx, boundaryTokenLocation + boundaryToken.length + 1),
+      lastBoundaryToken,
+      raw.slice(traverseStartIdx, boundaryTokenLocation + boundaryToken.length + 1),
     );
     tokenStream.push(tokenObject);
-    contentType = estimateToken(boundaryToken);
-    traverseIdx = boundaryTokenLocation + 1;
+    traverseStartIdx += boundaryTokenLocation + 1;
+    lastBoundaryToken = boundaryToken;
   }
 
   return tokenStream;
