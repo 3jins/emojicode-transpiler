@@ -1,4 +1,9 @@
 export default ({
+  separators: [
+    ' ',
+    '\n',
+    '\t',
+  ],
   gfm: {
     ':x:': '❌',
     ':exclamation:': '❗️',
@@ -60,7 +65,7 @@ export default ({
     '/***': { contentType: '', endingToken: '***/' },
     ':thought_balloon:': { contentType: 'comment', endingToken: '\n' },
     '//': { contentType: 'comment', endingToken: '\n' },
-    ':crayon: :new:': { contentType: 'identifier', endingTokens: '' },
+    ':crayon: :new:': { contentType: 'identifier', endingToken: 'anything' },
     var: { contentType: 'identifier', endingToken: 'anything' },
     ':crayon:': { contentType: 'identifier', endingToken: 'anything' },
     $: { contentType: 'identifier', endingToken: 'anything' },
