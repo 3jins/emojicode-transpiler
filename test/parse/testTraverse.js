@@ -1,18 +1,7 @@
-import match from '../../src/match';
 import traverse from '../../src/parse/traverse';
+import getEndingTokens from '../../src/parse/getEndingTokens';
 
 export default () => {
-  const { separators, boundary } = match;
-  const boundaryTokens = Object.keys(boundary);
-
-  const getEndingTokens = (token) => {
-    console.log(token);
-    if (!token) return boundaryTokens;
-    const { endingToken } = boundary[token];
-    if (endingToken === 'anything') return separators.concat(boundaryTokens);
-    return [endingToken];
-  };
-
   const testCases = [
     {
       token: '"',
