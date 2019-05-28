@@ -1,16 +1,9 @@
 import _ from 'lodash';
 import match from '../match';
+import getEndingTokens from './getEndingTokens';
 
 export default (matchToken, codeFragment) => {
-  const { separators, boundary } = match;
-  const boundaryTokens = Object.keys(boundary);
-
-  const getEndingTokens = (matchToken) => {
-    if (!matchToken) return boundaryTokens;
-    const { endingToken } = boundary[matchToken];
-    if (endingToken === 'anything') return separators.concat(boundaryTokens);
-    return [endingToken];
-  };
+  const { separators } = match;
 
   const warnWhenSeparatorsGetLonger = (functionName) => {
     separators.forEach((separator) => {
