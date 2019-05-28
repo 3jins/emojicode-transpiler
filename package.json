@@ -36,6 +36,8 @@
     "mocha": "^6.1.4"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.4.4"
+    "@babel/polyfill": "^7.4.4",
+    "bluebird": "^3.5.5",
+    "lodash": "^4.17.11"
   }
 }
