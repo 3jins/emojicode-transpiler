@@ -37,7 +37,7 @@ export default () => {
       describe('parse', () => {
         testItemList.forEach((rawCode, testNo) => {
           it(`test #${testNo + 1}`, () => {
-            parse(rawCode).should.equal(expected[testNo]);
+            parse(rawCode).should.eql(expected[testNo]);
           });
         });
       });
