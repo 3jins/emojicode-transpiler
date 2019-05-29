@@ -3,6 +3,7 @@ import path from 'path';
 import * as Bluebird from 'bluebird';
 import expected from './testList/expected';
 import testTraverse from './testTraverse';
+import testMakeTokenObject from './testMakeTokenObject';
 import parse from '../../src/parse';
 
 export default () => {
@@ -26,6 +27,7 @@ export default () => {
   };
 
   testTraverse();
+  testMakeTokenObject();
 
   // TODO: Change the code design to remove dummy describe/it
   describe('dummy for async', () => {
