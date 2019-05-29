@@ -1,3 +1,6 @@
+import contentTypes from './contentTypes';
+
+const [ string, comment, identifier, rest ] = contentTypes;
 export default ({
   separators: [
     ' ',
@@ -55,20 +58,20 @@ export default ({
     $: '🖍',
   },
   boundary: {
-    ':abc:': { contentType: 'string', endingToken: ':abc:' },
-    '"': { contentType: 'string', endingToken: '"' },
-    ':thought_balloon: :soon:': { contentType: 'comment', endingToken: ':end: :thought_balloon:' },
-    '/*': { contentType: 'comment', endingToken: '*/' },
-    ':green_book:': { contentType: 'comment', endingToken: ':green_book:' },
-    '/**': { contentType: 'comment', endingToken: '**/' },
-    ':blue_book:': { contentType: 'comment', endingToken: ':blue_book:' },
+    ':abc:': { contentType: string, endingToken: ':abc:' },
+    '"': { contentType: string, endingToken: '"' },
+    ':thought_balloon: :soon:': { contentType: comment, endingToken: ':end: :thought_balloon:' },
+    '/*': { contentType: comment, endingToken: '*/' },
+    ':green_book:': { contentType: comment, endingToken: ':green_book:' },
+    '/**': { contentType: comment, endingToken: '**/' },
+    ':blue_book:': { contentType: comment, endingToken: ':blue_book:' },
     '/***': { contentType: '', endingToken: '***/' },
-    ':thought_balloon:': { contentType: 'comment', endingToken: '\n' },
-    '//': { contentType: 'comment', endingToken: '\n' },
-    ':crayon: :new:': { contentType: 'identifier', endingToken: 'anything' },
-    var: { contentType: 'identifier', endingToken: 'anything' },
-    ':crayon:': { contentType: 'identifier', endingToken: 'anything' },
-    $: { contentType: 'identifier', endingToken: 'anything' },
+    ':thought_balloon:': { contentType: comment, endingToken: '\n' },
+    '//': { contentType: comment, endingToken: '\n' },
+    ':crayon: :new:': { contentType: identifier, endingToken: 'anything' },
+    var: { contentType: identifier, endingToken: 'anything' },
+    ':crayon:': { contentType: identifier, endingToken: 'anything' },
+    $: { contentType: identifier, endingToken: 'anything' },
   },
   escapeSequence: [
     ':x:',
