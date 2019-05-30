@@ -1,4 +1,4 @@
 main {
-  var pet_name :string  // I love cats.
+  var pet_name : string  // I love cats.
   "kimaeyong" -> $ pet_name
 }
