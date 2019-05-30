@@ -1,6 +1,12 @@
 import contentTypes from './contentTypes';
 
-const [ string, comment, identifier, rest ] = contentTypes;
+const [
+  string,
+  comment,
+  identifier,
+  rest,
+] = contentTypes;
+
 export default ({
   separators: [
     ' ',
