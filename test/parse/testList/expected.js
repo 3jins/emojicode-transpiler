@@ -20,7 +20,7 @@ export default [
     },
     {
       type: 'rest',
-      content: `:abc:;
+      content: `:abc: ;
 :watermelon:
 `,
     },
@@ -36,7 +36,7 @@ export default [
     },
     {
       type: 'rest',
-      content: ' :string  //',
+      content: ' : string  //',
     },
     {
       type: 'comment',
@@ -89,7 +89,7 @@ export default [
     },
     {
       type: 'rest',
-      content: '";\n',
+      content: '" ;\n',
     },
   ],
 ];
