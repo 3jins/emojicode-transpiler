@@ -2,11 +2,10 @@
   "name": "emojicode-transpiler",
   "version": "1.0.0",
   "description": "🅰️👉🍇 Coding with emojicode(https://github.com/emojicode/emojicode) would be easier.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha test --require @babel/register --require @babel/polyfill",
-    "build": "babel src -d build",
-    "start": "node build/main.js"
+    "prepublish": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -39,5 +38,8 @@
     "@babel/polyfill": "^7.4.4",
     "bluebird": "^3.5.5",
     "lodash": "^4.17.11"
+  },
+  "bin": {
+    "emojit": "bin/emojit.js"
   }
 }
