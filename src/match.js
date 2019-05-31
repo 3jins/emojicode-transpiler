@@ -34,6 +34,7 @@ export default ({
     ':right_arrow:': '➡️',
     ':abcd:': '🔡',
     ':candy:': '🍬',
+    ':beer:': '🍺',
     ':rabbit2:': '🐇',
   },
   traditional: {
@@ -55,6 +56,7 @@ export default ({
     'd[': '🍯',
     ']': '🍆',
     ':': '🍬',
+    unwrap: '🍺',
     main: '🏁',
     print: '😀',
     var: '🖍🆕',
