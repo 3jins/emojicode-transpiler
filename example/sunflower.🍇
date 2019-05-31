@@ -1,0 +1,7 @@
+main {
+  var mad_dog : string // A name of mad dog in Jang-yu
+  "오태식이" -> $ mad_dog // Taeshik Oh
+  print "오~" ;
+  print unwrap mad_dog ;
+  print "돌아왔구나!" ;
+}
