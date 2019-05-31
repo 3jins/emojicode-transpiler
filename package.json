@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha test --require @babel/register --require @babel/polyfill",
-    "prepublish": "babel src -d lib"
+    "prepublish": "babel src -d lib",
+    "help-rdmu": "babel-node script/helpReadmeUpdate.js"
   },
   "repository": {
     "type": "git",
