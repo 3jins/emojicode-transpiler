@@ -1,5 +1,4 @@
 .idea/
-.DS_Store
-build/
+.DS_Store/
 node_modules/
-lib
+lib/

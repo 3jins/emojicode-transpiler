@@ -1,6 +1,6 @@
 {
   "name": "emojicode-transpiler",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "🅰️👉🍇 Coding with emojicode(https://github.com/emojicode/emojicode) would be easier.",
   "main": "lib/index.js",
   "scripts": {
