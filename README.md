@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/emojicode-transpiler.svg)](https://badge.fury.io/js/emojicode-transpiler)
+
 # emojicode-transpiler
 Readability of [Emojicode](https://github.com/emojicode/emojicode) is high, but productivity of Emojicode is low because of the difficulty of emoji input. emojicode-transpiler will make coding with Emojicode much easier!
 
@@ -13,7 +15,7 @@ npm install -g emojicode-transpiler
 
 ## Usage
 
-1. Create an Emojicode source file based on [Emojicode syntax](https://www.emojicode.org/docs/) and  [Transpilation Table](#Transpilation-Table).
+1. Create an Emojicode source file based on [Emojicode syntax](https://www.emojicode.org/docs/) and  [Transpilation Table](#transpilation-table).
 
     ```
     // hello.🍇
@@ -128,5 +130,5 @@ main {
 
 ## Reference
 
-- Making Log (Korean): <https://enhanced.kr/133>
+- Making Log (Korean): <https://enhanced.kr/postviewer/133>
 - Emojicode documentation: <https://www.emojicode.org/docs/>
