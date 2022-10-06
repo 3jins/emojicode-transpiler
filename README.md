@@ -25,10 +25,10 @@ npm install -g emojicode-transpiler
     }
     ```
 
-2. Execute emojicode-transpiler with command `emojit`.
+2. Execute emojicode-transpiler with command `et`.
 
   ```
-  emojit hello.🍇
+  et hello.🍇
   ```
   
   Result would be like this.
